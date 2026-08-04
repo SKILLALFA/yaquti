@@ -81,9 +81,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Newsletter & Bottom */}
-        <div className="mt-10 flex flex-col gap-12 border-t border-white/20 pt-10 md:mt-14 md:flex-row md:items-start md:justify-between md:pt-14 pb-8">
-          {/* Left: Newsletter */}
+        {/* Newsletter & Socials */}
+        <div className="mt-10 flex flex-col items-center gap-8 border-t border-white/20 pt-10 md:mt-14 md:flex-row md:items-center md:justify-between md:pt-14">
           <div className="text-center md:text-left">
             <h3 className="text-[17px] text-white">Newsletter Signup</h3>
             <div className="mx-auto mt-5 max-w-[28rem] md:mx-0">
@@ -91,25 +90,45 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Right: Socials, Copyright, Locales */}
-          <div className="flex flex-col items-center gap-6 md:items-end">
-            <SocialLinks className="text-white" />
+          <SocialLinks className="text-white" />
+        </div>
 
-            <div className="flex flex-col items-center gap-1 text-[14px] text-white/80 md:items-end">
-              <p>Copyright &copy; {year} YAQUTI. All rights reserved.</p>
-              <p>
+        {/* Legal bar */}
+        <div className="mt-10 border-t border-white/10 pt-8 pb-4 md:mt-14">
+          {/* YAQUTI wordmark */}
+          <div className="mb-6 flex justify-center">
+            <span className="font-serif text-[1.5rem] tracking-[0.15em] text-white/25">
+              YAQUTI
+            </span>
+          </div>
+
+          {/* Bottom row */}
+          <div className="flex flex-col items-center gap-4 text-[13px] text-white/50 md:flex-row md:justify-between">
+            {/* Left — copyright + attribution */}
+            <div className="flex flex-col items-center gap-1 text-center md:flex-row md:gap-2 md:text-left">
+              <span>Copyright &copy; {year} YAQUTI. All rights reserved.</span>
+              <span className="hidden text-white/30 md:inline">&middot;</span>
+              <span>
                 Created by{" "}
                 <a
                   href="https://studiorare.com"
-                  className="underline hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/60 underline decoration-white/20 underline-offset-2 transition-colors hover:text-white hover:decoration-white/50"
                 >
                   Studio Rare
                 </a>
-              </p>
+              </span>
             </div>
 
-            <div className="flex gap-6 text-[14px] text-white/80">
+            {/* Right — region + language */}
+            <div className="flex items-center gap-2 text-white/40">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="opacity-60" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z" />
+              </svg>
               <span>United States</span>
+              <span className="text-white/20">|</span>
               <span>English</span>
             </div>
           </div>

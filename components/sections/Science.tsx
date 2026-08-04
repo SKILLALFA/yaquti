@@ -11,7 +11,7 @@ export default function Science() {
       <div className="mt-6 grid grid-cols-1 items-start gap-x-8 gap-y-12 md:mt-8 md:grid-cols-2 xl:grid-cols-3">
         {/* Column 1: Ashwagandha root photo + text */}
         <div className="flex flex-col gap-6">
-          <div className="relative aspect-[4/5] w-full overflow-hidden">
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-black/[0.06] shadow-[0_2px_12px_-2px_rgba(0,0,0,0.08),0_4px_24px_-4px_rgba(0,0,0,0.06)]">
             <Image
               src="/images/science_ashwagandha_root.png"
               alt="Whole dried ashwagandha root"
@@ -20,7 +20,7 @@ export default function Science() {
               className="object-cover"
             />
           </div>
-          <div>
+          <div className="rounded-2xl border border-black/[0.06] bg-white p-6 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.08),0_4px_24px_-4px_rgba(0,0,0,0.06)]">
             <h3 className="font-serif text-2xl text-ink">
               Ashwagandha root
             </h3>
@@ -40,7 +40,7 @@ export default function Science() {
 
         {/* Column 2: Collagen powder photos stacked */}
         <div className="flex flex-col gap-8">
-          <div className="relative aspect-square w-full overflow-hidden">
+          <div className="relative aspect-square w-full overflow-hidden rounded-2xl border border-black/[0.06] shadow-[0_2px_12px_-2px_rgba(0,0,0,0.08),0_4px_24px_-4px_rgba(0,0,0,0.06)]">
             <Image
               src="/images/science_collagen_powder_dish.png"
               alt="Collagen powder in a glass dish"
@@ -49,7 +49,7 @@ export default function Science() {
               className="object-cover"
             />
           </div>
-          <div className="relative aspect-square w-full overflow-hidden">
+          <div className="relative aspect-square w-full overflow-hidden rounded-2xl border border-black/[0.06] shadow-[0_2px_12px_-2px_rgba(0,0,0,0.08),0_4px_24px_-4px_rgba(0,0,0,0.06)]">
             <Image
               src="/images/science_collagen_powder_pile.png"
               alt="Loose collagen peptide powder"
@@ -63,7 +63,7 @@ export default function Science() {
         {/* Column 3: Collagen peptides + Collagen text blocks with botanical illustrations */}
         <div className="flex flex-col gap-10">
           {/* Collagen peptides block */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 rounded-2xl border border-black/[0.06] bg-white p-6 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.08),0_4px_24px_-4px_rgba(0,0,0,0.06)]">
             <div className="flex-1">
               <h3 className="font-serif text-2xl text-ink">
                 Collagen peptides
@@ -93,7 +93,7 @@ export default function Science() {
           </div>
 
           {/* Collagen block */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 rounded-2xl border border-black/[0.06] bg-white p-6 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.08),0_4px_24px_-4px_rgba(0,0,0,0.06)]">
             <div className="flex-1">
               <h3 className="font-serif text-2xl text-ink">
                 Collagen

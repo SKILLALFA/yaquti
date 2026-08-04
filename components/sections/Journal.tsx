@@ -83,7 +83,7 @@ function ArticleCard({
 
 export default function Journal() {
   return (
-    <SectionShell variant="standard" background="bg-[#f8f7f5]" ariaLabel="Journal" id="journal">
+    <SectionShell variant="standard" background="bg-[#ffffff]" ariaLabel="Journal" id="journal">
       <SectionHeading title="Journal" />
 
       <div className="mt-6 grid grid-cols-1 gap-10 md:mt-8 md:grid-cols-2 lg:gap-16">

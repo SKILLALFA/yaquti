@@ -4,8 +4,8 @@
   /* Colors — see implementation_plan.md §1.1 / §2.1 */
   --color-ink: #1c2d3a;
   --color-ink-light: #2a3f4d;
-  --color-cream: #f8f9f4; /* warm page background — sampled from Yaquti Sections reference set */
-  --color-milk: #f8f9f4; /* nav bar background — same warm tone as cream in the current reference set */
+  --color-cream: #ffffff; /* page background */
+  --color-milk: #ffffff; /* nav bar background */
   --color-parchment: #f2efe7;
   --color-accent: #8c0d2c; /* YAQUTI Ruby */
   --color-taupe: #7c7061;
@@ -59,6 +59,26 @@
 
 body {
   font-family: var(--font-sans);
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 1px rgba(140, 13, 44, 0.4),
+      0 0 20px 4px rgba(140, 13, 44, 0.35),
+      0 0 40px 10px rgba(140, 13, 44, 0.15);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(140, 13, 44, 0.6),
+      0 0 32px 10px rgba(140, 13, 44, 0.55),
+      0 0 64px 20px rgba(140, 13, 44, 0.25);
+  }
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2.6s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

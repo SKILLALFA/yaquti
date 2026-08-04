@@ -46,7 +46,7 @@ function USPCard({
   description: string;
 }) {
   return (
-    <div className="flex flex-col items-start rounded-2xl bg-white p-5 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] md:p-6">
+    <div className="flex flex-col items-start rounded-2xl border border-black/[0.06] bg-white p-5 shadow-[0_2px_12px_-2px_rgba(0,0,0,0.08),0_4px_24px_-4px_rgba(0,0,0,0.06)] md:p-6">
       <Icon
         size={32}
         strokeWidth={1.5}
@@ -73,7 +73,7 @@ export default function WhyYaquti() {
 
       <div className="mt-6 grid grid-cols-1 gap-6 md:mt-8 md:grid-cols-12 lg:gap-8">
         {/* Left: Science Meets Nature image card */}
-        <div className="flex flex-col overflow-hidden rounded-3xl bg-white shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] md:col-span-5">
+        <div className="flex flex-col overflow-hidden rounded-3xl border border-black/[0.06] bg-white shadow-[0_2px_12px_-2px_rgba(0,0,0,0.08),0_4px_24px_-4px_rgba(0,0,0,0.06)] md:col-span-5">
           <div className="px-6 py-8 text-center md:px-8 md:py-10">
             <h3 className="font-serif text-[1.75rem] font-medium text-ink md:text-3xl">
               Science Meets Nature
@@ -105,7 +105,7 @@ export default function WhyYaquti() {
           </div>
 
           {/* Bottom lifestyle collage */}
-          <div className="relative w-full flex-1 overflow-hidden rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] min-h-[200px] md:min-h-[250px] lg:min-h-[300px]">
+          <div className="relative w-full flex-1 overflow-hidden rounded-3xl border border-black/[0.06] shadow-[0_2px_12px_-2px_rgba(0,0,0,0.08),0_4px_24px_-4px_rgba(0,0,0,0.06)] min-h-[200px] md:min-h-[250px] lg:min-h-[300px]">
             <Image
               src="/images/why_yaquti_lifestyle_collage.png"
               alt="Collage of modern architecture, professional kitchen, gym, and professionals"

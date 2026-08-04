@@ -52,7 +52,7 @@ function QuoteCard({
 
 export default function Testimonials() {
   return (
-    <SectionShell variant="standard" background="bg-[#f8f7f5]" ariaLabel="Testimonials">
+    <SectionShell variant="standard" background="bg-[#ffffff]" ariaLabel="Testimonials">
       <div className="flex flex-col items-start gap-8 md:gap-10">
         <SectionHeading title="Testimonials" />
         
