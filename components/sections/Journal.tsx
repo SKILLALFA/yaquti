@@ -67,7 +67,7 @@ function ArticleCard({
       <h3 className="mt-2 font-serif text-[1.35rem] leading-[1.15] text-ink whitespace-pre-line">
         {title}
       </h3>
-      <p className="mt-2 text-[15px] leading-[1.4] text-ink/90">
+      <p className="mt-2 text-[15px] leading-[1.4] text-ink/90 text-balance">
         {description}
       </p>
       <a
@@ -104,7 +104,7 @@ export default function Journal() {
           <h3 className="mt-2 font-serif text-[2.5rem] leading-[1.05] tracking-tight text-ink md:text-[3rem]">
             Nutrition, Science &amp; Longevity.<br/>Recovery Recovery
           </h3>
-          <p className="mt-4 max-w-lg text-[17px] leading-[1.4] text-ink/90">
+          <p className="mt-4 max-w-lg text-[17px] leading-[1.4] text-ink/90 text-balance">
             A detailed exploration into cellular repair mechanisms and optimized
             micronutrient absorption for systemic health.
           </p>

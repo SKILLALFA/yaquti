@@ -17,9 +17,34 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://yaquti.com"),
   title: "YAQUTI — Be Rare.",
   description:
     "Science-backed nutrition for those who choose quality over compromise.",
+  openGraph: {
+    title: "YAQUTI — Be Rare.",
+    description:
+      "Science-backed nutrition for those who choose quality over compromise.",
+    url: "https://yaquti.com",
+    siteName: "YAQUTI",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "YAQUTI Brand Imagery",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "YAQUTI — Be Rare.",
+    description:
+      "Science-backed nutrition for those who choose quality over compromise.",
+    images: ["/twitter-image.png"],
+  },
 };
 
 export default function RootLayout({

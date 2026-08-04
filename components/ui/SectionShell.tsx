@@ -8,9 +8,9 @@ export type SectionVariant = "micro" | "standard" | "footer";
 // `micro` is a thin utility strip that sits flush against adjacent sections.
 // `footer` gets extra bottom padding for breathing room before page end.
 const variantPadding: Record<SectionVariant, string> = {
-  micro: "py-2 md:py-3 lg:py-4",
-  standard: "py-6 sm:py-8 md:py-10 lg:py-12",
-  footer: "py-6 sm:py-8 md:py-10 lg:py-12 pb-6",
+  micro: "py-1 md:py-2",
+  standard: "py-4 sm:py-5 md:py-6 lg:py-8",
+  footer: "py-4 sm:py-5 md:py-6 lg:py-8 pb-4",
 };
 
 export default function SectionShell({
