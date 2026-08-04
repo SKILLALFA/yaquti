@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Search, User, ShoppingBag, Menu, X } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Logo from "@/components/ui/Logo";
@@ -26,9 +27,9 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-milk">
       <Container className="flex items-center justify-between py-3 md:py-4">
-        <a href="/" aria-label="YAQUTI home" className="shrink-0">
+        <Link href="/" aria-label="YAQUTI home" className="shrink-0">
           <Logo variant="dark" />
-        </a>
+        </Link>
 
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-8">

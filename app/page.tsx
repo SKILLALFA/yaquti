@@ -1,7 +1,6 @@
 import Nav from "@/components/sections/Nav";
 import Hero from "@/components/sections/Hero";
 import TrustBadges from "@/components/sections/TrustBadges";
-import BeRareInterstitial from "@/components/sections/BeRareInterstitial";
 import FeaturedCategories from "@/components/sections/FeaturedCategories";
 import Science from "@/components/sections/Science";
 import WhyYaquti from "@/components/sections/WhyYaquti";

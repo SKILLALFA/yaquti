@@ -18,7 +18,7 @@ export default function Hero() {
             alt="YAQUTI supplement bottle suspended above a stone pedestal"
             fill
             priority
-            sizes="58vw"
+            sizes="(min-width: 1280px) 55vw, (min-width: 1024px) 58vw, 1px"
             className="object-cover object-[center_20%]"
           />
           {/* Smooth left-edge gradient so the image blends seamlessly into the background */}
@@ -63,7 +63,7 @@ export default function Hero() {
             alt="YAQUTI supplement bottle suspended above a stone pedestal"
             fill
             priority
-            sizes="(max-width: 1023px) 85vw, 58vw"
+            sizes="(min-width: 1024px) 1px, (min-width: 768px) 440px, 400px"
             className="object-cover object-top"
           />
         </div>

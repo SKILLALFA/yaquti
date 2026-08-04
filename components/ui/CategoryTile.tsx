@@ -11,7 +11,7 @@ export default function CategoryTile({
   href?: string;
 }) {
   return (
-    <Link href={href} className="group block">
+    <Link href={href} prefetch={false} className="group block">
       <div className="relative aspect-square overflow-hidden rounded-tile bg-parchment">
         <Image
           src={image}

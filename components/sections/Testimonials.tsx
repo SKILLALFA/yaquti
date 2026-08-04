@@ -44,7 +44,7 @@ function QuoteCard({
         {quote}”
       </p>
       <p className="mt-8 text-[15px] text-ink/90">
-        &ndash; {attribution} // &ndash; {role}
+        &ndash; {attribution} {"//"} &ndash; {role}
       </p>
     </div>
   );

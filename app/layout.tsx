@@ -5,14 +5,14 @@ import "./globals.css";
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["500", "700"],
   display: "swap",
 });
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
@@ -21,6 +21,15 @@ export const metadata: Metadata = {
   title: "YAQUTI — Be Rare.",
   description:
     "Science-backed nutrition for those who choose quality over compromise.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", media: "(prefers-color-scheme: light)" },
+      { url: "/favicon-ink.ico", media: "(prefers-color-scheme: dark)" },
+      { url: "/icon.svg", type: "image/svg+xml", media: "(prefers-color-scheme: light)" },
+      { url: "/icon-ink.svg", type: "image/svg+xml", media: "(prefers-color-scheme: dark)" },
+    ],
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     title: "YAQUTI — Be Rare.",
     description:
@@ -29,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "YAQUTI",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "YAQUTI Brand Imagery",
@@ -43,7 +52,7 @@ export const metadata: Metadata = {
     title: "YAQUTI — Be Rare.",
     description:
       "Science-backed nutrition for those who choose quality over compromise.",
-    images: ["/twitter-image.png"],
+    images: ["/og-image.png"],
   },
 };
 
