@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors — see implementation_plan.md §1.1 / §2.1 */
+  --color-ink: #1c2d3a;
+  --color-ink-light: #2a3f4d;
+  --color-cream: #f8f9f4; /* warm page background — sampled from Yaquti Sections reference set */
+  --color-milk: #f8f9f4; /* nav bar background — same warm tone as cream in the current reference set */
+  --color-parchment: #f2efe7;
+  --color-accent: #8c0d2c; /* YAQUTI Ruby */
+  --color-taupe: #7c7061;
+  --color-border: #e5e2da;
+  --color-slate: #859afa; /* dormant — not used on landing page */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Typography */
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.5;
+  --text-sm: 0.8125rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1rem;
+  --text-base--line-height: 1.6;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.6;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.4;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 1.3;
+  --text-3xl: 1.75rem;
+  --text-3xl--line-height: 1.25;
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: 1.2;
+  --text-5xl: 2.75rem;
+  --text-5xl--line-height: 1.15;
+  --text-6xl: 3.5rem;
+  --text-6xl--line-height: 1.1;
+  --text-7xl: 4rem;
+  --text-7xl--line-height: 1.05;
+
+  /* Spacing — Hero's own internal top offset (image-to-text rhythm).
+     Section-to-section rhythm lives in SectionShell (pt-16 / md:pt-24). */
+  --spacing-section-hero-mobile: 3.5rem;
+  --spacing-section-hero-tablet: 5rem;
+
+  /* Radius */
+  --radius-card: 8px;
+  --radius-button: 8px;
+  --radius-tile: 8px;
+  --radius-image: 8px;
+  --radius-pill: 9999px;
+
+  /* Container */
+  --container-content: 1320px;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
