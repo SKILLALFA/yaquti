@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local design references (kept out of the repo to avoid binary bloat)
+/yaqutic_pricing_page/
