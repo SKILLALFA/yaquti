@@ -16,6 +16,11 @@ const inter = Inter({
   display: "swap",
 });
 
+// Shared by the Open Graph and Twitter cards so the two can't drift apart.
+const SOCIAL_TITLE = "My Alfa World — Six Ways to Earn. One World of Opportunity.";
+const SOCIAL_DESCRIPTION =
+  "My Alfa World is a premium-products affiliate-marketing platform launching in nine countries with six ways to earn: profit-share cashback, direct referral, spill over, lifetime matching, brand outlets, and brand royalty.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://yaquti.com"),
   title: "YAQUTI — Be Rare.",
@@ -31,9 +36,8 @@ export const metadata: Metadata = {
     apple: "/apple-icon.png",
   },
   openGraph: {
-    title: "YAQUTI — Be Rare.",
-    description:
-      "Science-backed nutrition for those who choose quality over compromise.",
+    title: SOCIAL_TITLE,
+    description: SOCIAL_DESCRIPTION,
     url: "https://yaquti.com",
     siteName: "YAQUTI",
     images: [
@@ -49,9 +53,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "YAQUTI — Be Rare.",
-    description:
-      "Science-backed nutrition for those who choose quality over compromise.",
+    title: SOCIAL_TITLE,
+    description: SOCIAL_DESCRIPTION,
     images: ["/og-image.png"],
   },
 };
