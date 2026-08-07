@@ -7,27 +7,25 @@ export default function Hero() {
     <section
       className="relative w-full overflow-hidden"
       aria-label="Hero"
-      style={{ backgroundColor: "#f3f0ea" }}
+      /* Matches the flat background baked into the hero artwork, so the image
+         meets the section with no visible seam. */
+      style={{ backgroundColor: "#F2EFE8" }}
     >
       {/* ── Desktop layout ── */}
       <div className="relative hidden lg:block">
-        {/* Product image — right-aligned, extends to viewport edge */}
-        <div className="absolute inset-y-0 right-0 w-[58%] xl:w-[55%]">
+        {/* Full-bleed artwork; its composition already leaves the left side
+            clear for the headline, so no gradient scrim is needed. */}
+        <div className="absolute inset-0">
           <Image
-            src="/images/hero_product_bottle.png"
-            alt="YAQUTI supplement bottle suspended above a stone pedestal"
+            src="/images/YAQUTI-hero-2560x967.png"
+            alt="YAQUTI Whey Protein Isolate + Concentrate in vanilla"
             fill
             priority
-            sizes="(min-width: 1280px) 55vw, (min-width: 1024px) 58vw, 1px"
-            className="object-cover object-[center_20%]"
-          />
-          {/* Smooth left-edge gradient so the image blends seamlessly into the background */}
-          <div
-            className="absolute inset-y-0 left-0 w-40"
-            style={{
-              background:
-                "linear-gradient(to right, #f3f0ea 0%, #f3f0eacc 40%, transparent 100%)",
-            }}
+            sizes="100vw"
+            /* contain, not cover: the artwork's flat background is the same
+               colour as the section, so letterboxing is invisible, and the
+               product never gets clipped on wide or short viewports. */
+            className="object-contain object-right"
           />
         </div>
 
@@ -57,14 +55,19 @@ export default function Hero() {
 
       {/* ── Mobile / Tablet: stacked layout ── */}
       <div className="lg:hidden">
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-[400px] md:max-w-[440px]">
+        {/* The tub sits at 66.25% across this wide artwork, so a plain centre
+            crop leaves it right of centre. With object-cover the position that
+            centres it depends only on the aspect ratio, not the width — hence a
+            single fixed 3/2 box and one constant: 89% centres it at every
+            mobile size. */}
+        <div className="relative aspect-[3/2] w-full">
           <Image
-            src="/images/hero_product_bottle.png"
-            alt="YAQUTI supplement bottle suspended above a stone pedestal"
+            src="/images/YAQUTI-hero-2560x967.png"
+            alt="YAQUTI Whey Protein Isolate + Concentrate in vanilla"
             fill
             priority
-            sizes="(min-width: 1024px) 1px, (min-width: 768px) 440px, 400px"
-            className="object-cover object-top"
+            sizes="100vw"
+            className="object-cover object-[89%_center]"
           />
         </div>
 
