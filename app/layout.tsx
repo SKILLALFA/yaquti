@@ -22,7 +22,10 @@ const SOCIAL_DESCRIPTION =
   "YAQUTI is a premium supplement brand built on radical transparency: clinically researched doses, single-origin botanicals, per-lot third-party testing, no proprietary blends, cGMP manufacturing, and a 60-day money-back guarantee.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yaquti.com"),
+  // Must be the canonical www host. The apex 308-redirects to www, and link
+  // scrapers (WhatsApp in particular) do not follow redirects when fetching
+  // og:image — they get the 308 body and drop the preview image entirely.
+  metadataBase: new URL("https://www.yaquti.com"),
   title: "YAQUTI — Be Rare.",
   description:
     "Science-backed nutrition for those who choose quality over compromise.",
@@ -36,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: SOCIAL_TITLE,
     description: SOCIAL_DESCRIPTION,
-    url: "https://yaquti.com",
+    url: "https://www.yaquti.com",
     siteName: "YAQUTI",
     images: [
       {
