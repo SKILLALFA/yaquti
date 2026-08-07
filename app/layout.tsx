@@ -17,9 +17,9 @@ const inter = Inter({
 });
 
 // Shared by the Open Graph and Twitter cards so the two can't drift apart.
-const SOCIAL_TITLE = "My Alfa World — Six Ways to Earn. One World of Opportunity.";
+const SOCIAL_TITLE = "YAQUTI — Be Rare. Every Milligram Disclosed.";
 const SOCIAL_DESCRIPTION =
-  "My Alfa World is a premium-products affiliate-marketing platform launching in nine countries with six ways to earn: profit-share cashback, direct referral, spill over, lifetime matching, brand outlets, and brand royalty.";
+  "YAQUTI is a premium supplement brand built on radical transparency: clinically researched doses, single-origin botanicals, per-lot third-party testing, no proprietary blends, cGMP manufacturing, and a 60-day money-back guarantee.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://yaquti.com"),
