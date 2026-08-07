@@ -26,13 +26,11 @@ export const metadata: Metadata = {
   title: "YAQUTI — Be Rare.",
   description:
     "Science-backed nutrition for those who choose quality over compromise.",
+  // The brand seal is a raster mark on a transparent background, so there is no
+  // vector source and no light/dark plate to swap — one icon serves both
+  // schemes. favicon.ico carries 16/24/32/48/64/256 frames.
   icons: {
-    icon: [
-      { url: "/favicon.ico", media: "(prefers-color-scheme: light)" },
-      { url: "/favicon-ink.ico", media: "(prefers-color-scheme: dark)" },
-      { url: "/icon.svg", type: "image/svg+xml", media: "(prefers-color-scheme: light)" },
-      { url: "/icon-ink.svg", type: "image/svg+xml", media: "(prefers-color-scheme: dark)" },
-    ],
+    icon: "/favicon.ico",
     apple: "/apple-icon.png",
   },
   openGraph: {
